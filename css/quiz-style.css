@@ -1,6 +1,10 @@
+.quiz {
+  list-style: none;
+}
 
 .possible_answer  {
     padding: .75em;
+    width: 50%;
 }
 
 .possible_answer:hover {
@@ -12,14 +16,19 @@
 .correct-answer, .wrong-answer {
 	opacity: .75;
 	cursor: pointer;
+  width: 50%;
+}
+
+.bg-warning {
+  background: rgba(254, 231, 88, .2)!important ;
 }
 
 .wrong-answer {
-	background: #FF8362;	
+	background: #FF8362 !important;
 }
 
 .correct-answer {
-    background: #62DA97;
+    background: #62DA97 !important;
 }
 
 .selected {

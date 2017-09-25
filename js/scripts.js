@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  $('#subtitle').hide();
   $('#pagepiling').pagepiling({
 	      menu: null,
         direction: 'vertical',
@@ -29,4 +30,9 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){},
 		afterRender: function(){},
 	});
+  $('#subtitle').fadeIn(2000);
+});
+
+$('.body').mousemove(function(event) {
+  $('#subtitle').fadeIn();
 });
