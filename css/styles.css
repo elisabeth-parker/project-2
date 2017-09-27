@@ -36,16 +36,19 @@
   font-size: 90px;
 }
 
-/*section 2 styling*/
-
-#section2 p {
+/*styling for each page's paragraphs*/
+p {
   padding-left: 20px;
   padding-top: 75px;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 200;
   min-height: 400px;
+  color: white;
 }
+
+
+/*section 2 styling*/
 
 #section2 #lr {
   text-align: center;
@@ -67,6 +70,7 @@
 
 #section2 #lr a:first-of-type {
   margin-right: 50px;
+  opacity: 0;
 }
 
 .info {
@@ -83,4 +87,87 @@
 
 .info span {
   color: white;
+}
+
+th {
+  border-bottom: 2px solid white;
+}
+th, td {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  padding: 20px;
+  text-align: center;
+}
+
+td:first-child {
+  border-right: 2px solid white;
+}
+th:first-child {
+  border: none;
+}
+
+td img {
+  min-height: 25px !important;
+  text-align: center;
+}
+
+#legend {
+  display: block;
+  position: relative;
+  left: 100px;
+  margin: 30px auto;
+  min-height: 50px;
+  max-height: 60px;
+  opacity: 1;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .5;
+    }
+}
+#audl {
+    -webkit-animation: blink 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 2s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 2s;
+    -o-animation-iteration-count: infinite;
+    display: block;
+    margin: 0px auto 12px auto;
+    position: static;
+}
+#audl:hover {
+  cursor: pointer;
+}
+.tooltip_templates {
+  display: none;
 }
