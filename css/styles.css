@@ -43,18 +43,16 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: 200;
-  min-height: 400px;
+  min-height: 350px;
   color: white;
 }
 
-
-/*section 2 styling*/
-
-#section2 #lr {
-  text-align: center;
+#section3 p {
+  min-height: 450px;
 }
 
-#section2 #lr a {
+/*styling for text navigation left/right buttons*/
+#lr a, #div-lr a {
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -62,14 +60,26 @@ p {
   vertical-align: bottom;
 }
 
-#section2 #lr a:hover {
+#lr a:hover, #div-lr a:hover {
   color: white;
   text-decoration: none;
   font-weight: 100;
 }
 
+#lr a:first-of-type, #div-lr a:first-of-type {
+  margin-right: 30px;
+  opacity: 0;
+  cursor: default;
+}
+#lr, #div-lr {
+  text-align: center;
+}
+
+/*section 2 styling*/
+
+
 #section2 #lr a:first-of-type {
-  margin-right: 50px;
+  margin-right: 30px;
   opacity: 0;
 }
 
@@ -89,6 +99,9 @@ p {
   color: white;
 }
 
+#section3 p {
+  padding: 0px 20px;
+}
 th {
   border-bottom: 2px solid white;
 }
@@ -121,51 +134,18 @@ td img {
   opacity: 1;
 }
 
-@-webkit-keyframes blink {
-    0% {
-        opacity: .5;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .5;
-    }
-}
-@-moz-keyframes blink {
-    0% {
-        opacity: .5;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .5;
-    }
-}
-@-o-keyframes blink {
-    0% {
-        opacity: .5;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: .5;
-    }
-}
 #audl {
-    -webkit-animation: blink 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation: blink 2s;
-    -moz-animation-iteration-count: infinite;
-    -o-animation: blink 2s;
-    -o-animation-iteration-count: infinite;
+    display: block;
+    margin: 0px auto 12px auto;
+    position: static;
+    opacity: 0;
+}
+#audl-active {
     display: block;
     margin: 0px auto 12px auto;
     position: static;
 }
-#audl:hover {
+#audl-active:hover {
   cursor: pointer;
 }
 .tooltip_templates {

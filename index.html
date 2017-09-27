@@ -4,17 +4,19 @@
 <head>
   <meta charset="utf-8">
 
-  <title>How to Play Ultimate</title>
-  <meta name="description" content="How to Play Ultimate">
+  <title>The Ultimate Essentials</title>
+  <meta name="description" content="The Ultimate Essentials">
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <!-- pagepiling css -->
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
   <!-- my own css -->
   <link rel="stylesheet" href="css/styles.css">
-
+  <!-- animation css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- tooltip css -->
   <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
   <!-- quiz css -->
   <link rel="stylesheet" href="css/quiz-style.css" media="screen" type="text/css">
 
@@ -29,7 +31,7 @@
     	<div class="section" id="section1">
           <div class="row">
             <div class="col-md-12">
-              <h1 id="header">How to Play Ultimate</h1>
+              <h1 id="header">The Ultimate Essentials</h1>
               <h2 id="subtitle">a primer on chasing plastic</h2>
             </div>
           </div>
@@ -37,10 +39,11 @@
             <a href="#"></a>
           </div>
       </div>
+      
     	<div class="section" id="section2" onmouseover="sectionSetup(this)">
         <div class="row">
           <div class="col-md-12 section-title">
-            <h2>The Essentials</h2>
+            <h2>The Game</h2>
           </div>
         </div>
         <div class="row hide info">
@@ -63,7 +66,8 @@
         </div>
         <div class="row hide">
           <div class="col-md-6">
-            <p id="divisions">There are four primary divisions in ultimate in the US: youth, college, club and professional. At most levels, there are three gender divisions: women's, mixed and men's. Although the professional league (American Ultimate Disc League, or AUDL) only offers a men's division, one team rostered Jesse Shofner in 2017, making her the first woman to play professional ultimate.</p>
+            <p id="divisions">There are four primary divisions in ultimate in the US: youth, college, club and professional. At most levels, there are three gender divisions: women's, mixed and men's.</p>
+            <div id="div-lr"><a id="div-left" href="#">< Back</a><a id="div-right" href="#">Next ></a></div>
           </div>
           <div class="col-md-6">
             <table>
@@ -93,13 +97,13 @@
                 <td><img src="images/established.png"></td>
                 <td><img src="images/established.png"></td>
                 <td><img src="images/established.png"></td>
-                <td><img id="audl" class="tooltip" data-tooltip-content="#tooltip_content" src="images/established.png"></td>
+                <td><img id="audl" class="tooltip" data-tooltip-content="#tooltip_content" src="images/none.png"></td>
               </tr>
             </table>
             <img id="legend" src="images/legend.png" alt="legend showing meaning of 'established', 'developing' and 'none' markers in table">
             <div class="tooltip_templates">
                 <span id="tooltip_content">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ua_AJ6TKac8" frameborder="0" allowfullscreen></iframe> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ua_AJ6TKac8" frameborder="0" allowfullscreen></iframe>
                 </span>
             </div>
           </div>

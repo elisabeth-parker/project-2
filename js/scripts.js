@@ -15,7 +15,7 @@ $(document).ready(function() {
             'textColor': '#000',
             'bulletsColor': '#000',
             'position': 'right',
-            'tooltips': ['', 'The Essentials', 'section3', 'section4']
+            'tooltips': ['', 'The Game', 'The Divisions', 'section4']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -34,7 +34,9 @@ $(document).ready(function() {
   $('.hide').hide();
   $('.tooltip').tooltipster({
     interactive: 'true',
-    side: 'left'
+    side: 'left',
+    theme: 'tooltipster-shadow',
+    trigger: 'click'
   });
 
 });
@@ -81,22 +83,72 @@ function displayText(x) {
     case 0:
       text = "Ultimate frisbee is a bit like a hybrid between soccer and football. It's played with seven people per team on a grass, turf or sand field. Players throw the disc to one another and score by catching it in the endzone."
       image = "images/intro1.png";
-      document.getElementById("left").style.opacity = "0";
+      document.getElementById("left").style.cssText="opacity: 0; cursor: default";
       document.getElementById("right").style.opacity = "1";
       break;
     case 1:
       text = "Players typically specialize into roles called handlers and cutters. Handlers are like quarterbacks in football, and cutters are receivers."
       image = "images/intro2.png";
-      document.getElementById("left").style.opacity = "1";
+      document.getElementById("left").style.cssText="opacity: 1";
       document.getElementById("right").style.opacity = "1";
       break;
     case 2:
       text = "Ultimate is self-officiated, meaning players have to make their own calls. These include fouls (ultimate is non-contact), picks, and travels. Generally, the opposing player can contest the call being made."
       image = "images/intro3.png";
-      document.getElementById("right").style.opacity = "0";
+      document.getElementById("right").style.cssText="opacity: 0; cursor: default";
       document.getElementById("left").style.opacity = "1";
   }
   // console.log(text);
   $('#intro').text(text);
   $('#intro-image').attr("src",image);
+}
+
+// functionality for divisions content
+var divCurrent = 0;
+var divLeftButton = $("#div-lr a").get(0);
+var divRightButton = $("#div-lr a").get(1);
+
+divLeftButton.onclick = function() {divPreviousText()};
+divRightButton.onclick = function() {divNextText()};
+
+function divPreviousText() {
+  if(divCurrent==0) {
+  }
+  else {
+    divCurrent-=1;
+    divDisplayText(divCurrent);
+  }
+}
+
+function divNextText() {
+  console.log('divNextText is running');
+  console.log(divCurrent);
+  if(divCurrent==2) {
+  }
+  else {
+    divCurrent+=1;
+    divDisplayText(divCurrent);
+  }
+}
+
+function divDisplayText(x) {
+  console.log('divDisplayText is running')
+  var text;
+  switch (x) {
+    case 0:
+      text = "There are four primary divisions in ultimate in the US: youth, college, club and professional. At most levels, there are three gender divisions: women's, mixed and men's."
+      document.getElementById("audl-active").id = "audl";
+      $('#audl').attr("class","");
+      document.getElementById("div-left").style.cssText="opacity: 0; cursor: default";
+      document.getElementById("div-right").style.cssText="opacity: 1; cursor: pointer";
+      break;
+    case 1:
+      text = "The professional division, currently dominated by the American Ultimate Disc League (AUDL), is the only division in which men and women are not afforded the same playing opportunities. Some small progress has been made; the Nashville NightWatch rostered Jesse Shofner in 2017, making her the first woman to play professional ultimate."
+      document.getElementById("audl").id = "audl-active";
+      $('#audl-active').attr("class","animated infinite flash");
+      document.getElementById("div-left").style.cssText="opacity: 1; cursor: pointer";
+      document.getElementById("div-right").style.cssText="opacity: 0; cursor: default";
+  }
+  // console.log(text);
+  $('#divisions').text(text);
 }
