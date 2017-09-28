@@ -12,10 +12,10 @@ $(document).ready(function() {
         loopTop: false,
         css3: true,
         navigation: {
-            'textColor': '#000',
-            'bulletsColor': '#000',
+            'textColor': 'white',
+            'bulletsColor': 'white',
             'position': 'right',
-            'tooltips': ['', 'The Game', 'The Divisions', 'section4']
+            'tooltips': ['Home', 'The Basics', 'The Divisions', 'The Hubs']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -36,16 +36,27 @@ $(document).ready(function() {
     interactive: 'true',
     side: 'left',
     theme: 'tooltipster-shadow',
-    trigger: 'click'
+    trigger: 'custom',
+    triggerOpen: {
+      click: 'true'
+    },
+    triggerClose: {
+      click: 'true',
+      scroll: 'true',
+      mouseleave: 'true'
+    },
+    selfDestruction: 'true'
   });
-
+  $('.your-class').slick({
+  });
 });
 
 // creates title to content transition when user moves to new page
 function sectionSetup(x) {
   var title = x.getElementsByClassName("section-title");
-  $(title).html("");
-  $('.hide').fadeIn(1000);
+  $(title).fadeOut(1000); //hide title and title background
+  var content = x.getElementsByClassName("hide");
+  $(content).fadeIn(3000); //show primary content
 }
 
 // functionality for essentials content

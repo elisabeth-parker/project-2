@@ -3,6 +3,31 @@
   height: 100%;
 }
 
+/*styling for titles on each page (text and background image)*/
+#section2 .section-title {
+  background-image: url(../images/bg1.png);
+}
+#section3 .section-title {
+  background-image: url(../images/bg2.png);
+}
+#section4 .section-title {
+  background-image: url(../images/bg3.png);
+}
+.section-title {
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-title h2 {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 90px;
+  color: white;
+}
+
 /*landing page styles*/
 #section1 {
   text-align: center;
@@ -19,22 +44,12 @@
   font-size: 70px;
   color: black;
 }
-/*subtitle*/
+/*landing page subtitle*/
 #section1 h2 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
 }
 
-/*styling for each page's title*/
-.section-title {
-  text-align: center;
-  vertical-align: top;
-}
-.section-title h2 {
-  font-family: 'Roboto Slab', serif;
-  font-weight: 700;
-  font-size: 90px;
-}
 
 /*styling for each page's paragraphs*/
 p {
