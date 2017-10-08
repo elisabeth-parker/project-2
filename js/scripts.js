@@ -100,14 +100,14 @@ function displayText(x) {
     case 1:
       text = "Players typically specialize into roles called handlers and cutters. Handlers are like quarterbacks in football, and cutters are receivers."
       image = "images/intro2.png";
-      document.getElementById("left").style.cssText="opacity: 1";
-      document.getElementById("right").style.opacity = "1";
+      document.getElementById("left").style.cssText="opacity: 1; cursor: pointer";
+      document.getElementById("right").style.cssText="opacity: 1; cursor: pointer";
       break;
     case 2:
       text = "Ultimate is self-officiated, meaning players have to make their own calls. These include fouls (ultimate is non-contact), picks, and travels. Generally, the opposing player can contest the call being made."
       image = "images/intro3.png";
       document.getElementById("right").style.cssText="opacity: 0; cursor: default";
-      document.getElementById("left").style.opacity = "1";
+      document.getElementById("left").style.cssText="opacity: 1; cursor: pointer";
   }
   // console.log(text);
   $('#intro').text(text);
@@ -162,4 +162,59 @@ function divDisplayText(x) {
   }
   // console.log(text);
   $('#divisions').text(text);
+}
+
+// functionality for teams content
+var teamCurrent = 0;
+var teamLeftButton = $("#team-lr a").get(0);
+var teamRightButton = $("#team-lr a").get(1);
+
+teamLeftButton.onclick = function() {teamPreviousText()};
+teamRightButton.onclick = function() {teamNextText()};
+
+function teamPreviousText() {
+  if(teamCurrent==0) {
+  }
+  else {
+    teamCurrent-=1;
+    teamDisplayText(teamCurrent);
+  }
+}
+
+function teamNextText() {
+  console.log('teamNextText is running');
+  console.log(teamCurrent);
+  if(teamCurrent==2) {
+  }
+  else {
+    teamCurrent+=1;
+    teamDisplayText(teamCurrent);
+  }
+}
+
+function teamDisplayText(x) {
+  console.log('teamDisplayText is running')
+  var text, image;
+  switch (x) {
+    case 0:
+      text = "Although success is transient for many ultimate teams, there are some teams that dominate year after year."
+      image = "images/crowns.gif";
+      document.getElementById("fury").style.opacity="0";
+      document.getElementById("riot").style.opacity="0";
+      document.getElementById("mb").style.opacity="0";
+      document.getElementById("team-left").style.cssText="opacity: 0; cursor: default";
+      document.getElementById("team-right").style.cssText="opacity: 1; cursor: pointer";
+      break;
+    case 1:
+      text = "This is especially true at the club level, where teams are stable enough to build a legacy and attract high-level players. Hover over the crowns to learn more about some of the elite women's club teams."
+      image = "images/crowns.png";
+      document.getElementById("fury").style.opacity="1";
+      document.getElementById("riot").style.opacity="1";
+      document.getElementById("mb").style.opacity="1";
+      document.getElementById("team-left").style.cssText="opacity: 1; cursor: pointer";
+      document.getElementById("team-right").style.cssText="opacity: 0; cursor: default";
+  }
+  // console.log(text);
+  $('#teams').text(text);
+  $('#teams-image').attr("src",image);
 }

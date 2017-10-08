@@ -67,7 +67,7 @@ p {
 }
 
 /*styling for text navigation left/right buttons*/
-#lr a, #div-lr a {
+#lr a, #div-lr a, #team-lr a {
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -75,18 +75,18 @@ p {
   vertical-align: bottom;
 }
 
-#lr a:hover, #div-lr a:hover {
+#lr a:hover, #div-lr a:hover, #team-lr a:hover {
   color: white;
   text-decoration: none;
   font-weight: 100;
 }
 
-#lr a:first-of-type, #div-lr a:first-of-type {
+#lr a:first-of-type, #div-lr a:first-of-type, #team-lr a:first-of-type {
   margin-right: 30px;
   opacity: 0;
   cursor: default;
 }
-#lr, #div-lr {
+#lr, #div-lr, #team-lr {
   text-align: center;
 }
 
@@ -165,4 +165,22 @@ td img {
 }
 .tooltip_templates {
   display: none;
+}
+
+#teams-image {
+  min-height: 50px !important;
+  max-height: 50px;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.icon {
+  min-height: 100px!important;
+  max-height: 100px;
+  /*display: inline-flex;
+  position: relative;
+  top: 100px;
+  left: -500px;*/
+  margin: 0px 30px;
+  opacity: 0;
 }
