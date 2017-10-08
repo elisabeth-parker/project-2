@@ -183,4 +183,27 @@ td img {
   left: -500px;*/
   margin: 0px 30px;
   opacity: 0;
+  cursor: pointer;
+  position: static!important;
+  display: inline!important;
+}
+
+span>p {
+  color: #e17960;
+  line-height: 125%;
+  padding: 20px;
+  font-size: 20px!important;
+}
+
+span>p>a {
+  color: black;
+}
+
+span>p>a:hover {
+  color: grey;
+}
+
+.tooltipster-base {
+  max-width: 300px;
+  max-height: 300px;
 }

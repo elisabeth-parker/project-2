@@ -15,7 +15,7 @@ $(document).ready(function() {
             'textColor': 'white',
             'bulletsColor': 'white',
             'position': 'right',
-            'tooltips': ['Home', 'The Basics', 'The Divisions', 'The Hubs']
+            'tooltips': ['Home', 'The Basics', 'The Divisions', 'The Icons']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -32,7 +32,7 @@ $(document).ready(function() {
 	});
   $('#subtitle').fadeIn(2500);
   $('.hide').hide();
-  $('.tooltip').tooltipster({
+  $('.vid').tooltipster({
     interactive: 'true',
     side: 'left',
     theme: 'tooltipster-shadow',
@@ -45,6 +45,13 @@ $(document).ready(function() {
       scroll: 'true',
       mouseleave: 'true'
     },
+    selfDestruction: 'true'
+  });
+  $('.tooltip').tooltipster({
+    side: ['bottom','left'],
+    interactive: 'true',
+    theme: 'tooltipster-shadow',
+    trigger: 'click',
     selfDestruction: 'true'
   });
   $('.your-class').slick({
@@ -206,7 +213,7 @@ function teamDisplayText(x) {
       document.getElementById("team-right").style.cssText="opacity: 1; cursor: pointer";
       break;
     case 1:
-      text = "This is especially true at the club level, where teams are stable enough to build a legacy and attract high-level players. Hover over the crowns to learn more about some of the elite women's club teams."
+      text = "This is especially true at the club level, where teams are stable enough to build a legacy and attract high-level players. Click on the icons to learn more about some of the elite women's club teams."
       image = "images/crowns.png";
       document.getElementById("fury").style.opacity="1";
       document.getElementById("riot").style.opacity="1";

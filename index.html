@@ -98,7 +98,7 @@
                 <td><img src="images/established.png"></td>
                 <td><img src="images/established.png"></td>
                 <td><img src="images/established.png"></td>
-                <td><img id="audl" class="tooltip" data-tooltip-content="#tooltip_content" src="images/none.png"></td>
+                <td><img id="audl" class="vid" data-tooltip-content="#tooltip_content" src="images/none.png"></td>
               </tr>
             </table>
             <img id="legend" src="images/legend.png" alt="legend showing meaning of 'established', 'developing' and 'none' markers in table">
@@ -115,7 +115,7 @@
       <div class="section" id="section4" onmousemove="sectionSetup(this)">
         <div class="row">
           <div class="col-md-12 section-title">
-            <h2>The Hubs</h2>
+            <h2>The Icons</h2>
           </div>
         </div>
         <div class="row hide">
@@ -127,11 +127,26 @@
             <img id="teams-image" src="images/crowns.gif">
             <div class="row">
               <div id="teams-imgs" class="col-md-12">
-                <img id="fury" class="icon" src="images/fury.png">
-                <img id="riot" class="icon" src="images/riot.png">
-                <img id="mb" class="icon" src="images/mb.png">
+                <img id="fury" class="icon tooltip" src="images/fury.png" data-tooltip-content="#fury-tooltip">
+                <img id="riot" class="icon tooltip" src="images/riot.png" data-tooltip-content="#riot-tooltip">
+                <img id="mb" class="icon tooltip" src="images/mb.png" data-tooltip-content="#mb-tooltip">
+                <div class="tooltip_templates">
+                    <span id="fury-tooltip">
+                      <p>Fury was founded in 1997 in the San Francisco Bay Area. The team won a national championship for seven straight years, from 2006 to 2012. For more, see <a href="http://furyultimate.com/">Fury's website.</a></p>
+                    </span>
+                </div>
+                <div class="tooltip_templates">
+                    <span id="riot-tooltip">
+                      <p>Riot is based in Seattle, arguably the strongest hub of ultimate in the world. Since 2001, Riot has never placed lower than 3rd place at club nationals. For more about Riot, see <a href="http://seattleriot.org/">their website.</a></p>
+                    </span>
+                </div>
+                <div class="tooltip_templates">
+                    <span id="mb-tooltip">
+                      <p>Molly Brown, in Colorado, is full of big name talent. MB has drawn power players from club teams across the country, and most recently recruited Colombian all-star Manuela Cardenas. For more, see <a href="https://www.facebook.com/MollyBrownTown/">the team's Facebook page.</a></p>
+                    </span>
+                </div>
               </div>
-            </div>
+          </div>
         </div>
       </div>
     </div>
