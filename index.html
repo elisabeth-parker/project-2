@@ -6,20 +6,23 @@
 
   <title>The Ultimate Essentials</title>
   <meta name="description" content="The Ultimate Essentials">
+  <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <!-- pagepiling css -->
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
-  <!-- my own css -->
-  <link rel="stylesheet" href="css/styles.css">
+
   <!-- animation css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- tooltip css -->
   <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
   <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
-
+  <link rel="stylesheet" href="css/timeline.css" media="screen" type="text/css">
   <!-- quiz css -->
   <link rel="stylesheet" href="css/quiz-style.css" media="screen" type="text/css">
+
+  <!-- my own css -->
+  <link rel="stylesheet" href="css/styles.css">
 
   <!-- Montserrat  and Roboto Slab fonts from Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700|Roboto+Slab:100" rel="stylesheet">
@@ -29,6 +32,8 @@
 
 <body>
     <div id="pagepiling">
+
+
     	<div class="section" id="section1">
           <div class="row">
             <div class="col-md-12">
@@ -40,6 +45,8 @@
             <a href="#"></a>
           </div>
       </div>
+
+
 
     	<div class="section" id="section2" onmousemove="sectionSetup(this)">
         <div class="row">
@@ -55,6 +62,95 @@
           <div class="col-md-6">
             <img id="intro-image" src="images/intro1.png">
           </div>
+        </div>
+      </div>
+      <!-- end section -->
+
+      <div class="section" id="section0" onmousemove="sectionSetup(this)">
+        <div class="row">
+          <div class="col-md-12 section-title">
+            <h2>The History</h2>
+          </div>
+        </div>
+        <div class="row hide">
+          <section class="cd-horizontal-timeline" >
+            <div class="timeline">
+              <div class="events-wrapper">
+                <div class="events">
+                  <ol>
+                    <li><a href="#0" data-date="01/01/1968" class="selected">1968</a></li>
+                    <li><a href="#0" data-date="01/01/1969">1969</a></li>
+                    <li><a href="#0" data-date="06/11/1972">1972</a></li>
+                    <li><a href="#0" data-date="25/04/1975">1975</a></li>
+                    <li><a href="#0" data-date="01/01/1983">1983</a></li>
+                    <li><a href="#0" data-date="01/01/1989">1989</a></li>
+                    <li><a href="#0" data-date="01/01/2001">2001</a></li>
+                    <li><a href="#0" data-date="02/08/2015">2015</a></li>
+                  </ol>
+
+                  <span class="filling-line" aria-hidden="true"></span>
+                </div> <!-- .events -->
+              </div> <!-- .events-wrapper -->
+
+              <ul class="cd-timeline-navigation">
+                <li><a href="#0" class="prev inactive">Prev</a></li>
+                <li><a href="#0" class="next">Next</a></li>
+              </ul> <!-- .cd-timeline-navigation -->
+            </div> <!-- .timeline -->
+
+            <div class="events-content">
+              <ol>
+                <li class="selected" data-date="01/01/1968">
+                  <h2>The Idea</h2>
+                  <em>1968</em>
+                  <p>Joel Silver introduces the idea of Ultimate Frisbee at Columbia High School in New Jersey.</p>
+                </li>
+
+                <li data-date="01/01/1969">
+                  <h2>The First Game</h2>
+                  <em>1969</em>
+                  <p>High schoolers play the first organized game of ultimate. They use the school parking lot for their field and piles of coats to mark the endzones.</p>
+                </li>
+
+                <li data-date="06/11/1972">
+                  <h2>Level Up</h2>
+                  <em>November 6, 1972</em>
+                  <p>Rutgers beats Princeton 29-27 in the first college ultimate game.</p>
+                </li>
+
+                <li data-date="25/04/1975">
+                  <h2>Tournament Central</h2>
+                  <em>April 25, 1975</em>
+                  <p>Eight teams take part in the first ultimate tournament, called The National Collegiate Championships.</p>
+                </li>
+
+                <li data-date="01/01/1983">
+                  <h2>Going Global</h2>
+                  <em>1983</em>
+                  <p>The first World Ultimate Championship tournament is held in Sweden. USA sends club teams to compete against European national teams and wins both the open and womens divisions.</p>
+                </li>
+
+                <li data-date="01/01/1989">
+                  <h2>Exhibitionism</h2>
+                  <em>1989</em>
+                  <p>Ultimate is showcased as an exhibition sport during the World Games.</p>
+                </li>
+
+                <li data-date="01/01/2001">
+                  <h2>World Games</h2>
+                  <em>2001</em>
+                  <p>Mixed ultimate is officially added to the World Games medal sports. Canada wins the gold medal over the USA.</p>
+                </li>
+
+                <li data-date="02/08/2015">
+                  <h2>Olympic Recognition</h2>
+                  <em>August 2, 2015</em>
+                  <p>The International Olympic Committee grants full recognition to the World Flying Disc Federation, the international governing body for the sport of ultimate. This raises hopes amongst the community that the sport will someday be included in the Olympic Games.</p>
+                </li>
+
+              </ol>
+            </div> <!-- .events-content -->
+          </section>
         </div>
       </div>
       <!-- end section -->
@@ -152,11 +248,6 @@
     </div>
       <!-- end section -->
 
-      <div class="section">
-        <div class="row">
-        </div>
-      </div>
-      <!-- end section -->
 
     	<div class="section pp-scrollable">
         <div class="row">
@@ -180,6 +271,7 @@
   <script src="js/tabletop.js" type="text/javascript"></script>
   <script src="js/quiz-script.js" type="text/javascript"></script>
   <script type="text/javascript" src="tooltipster/dist/js/tooltipster.bundle.min.js"></script>
+  <script src="js/timeline.js"></script>
   <script src="js/scripts.js"></script>
 
   <script type="text/javascript">
