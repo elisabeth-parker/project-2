@@ -7,7 +7,6 @@
 #section0 .section-title {
   background-image: url(../images/bg1.png);
 }
-
 #section2 .section-title {
   background-image: url(../images/bg2.png);
 }
@@ -16,6 +15,9 @@
 }
 #section4 .section-title {
   background-image: url(../images/bg4.png);
+}
+#section5 .section-title {
+  background-image: url(../images/bg5.png);
 }
 .section-title {
   background-size: cover;
@@ -31,6 +33,7 @@
   font-size: 90px;
   color: white;
 }
+
 
 /*landing page styles*/
 #section1 {
@@ -97,8 +100,6 @@ p {
 }
 
 /*section 2 styling*/
-
-
 #section2 #lr a:first-of-type {
   margin-right: 30px;
   opacity: 0;
@@ -120,6 +121,7 @@ p {
   color: white;
 }
 
+/*section 3 styling, incl table with division markers*/
 #section3 p {
   padding: 0px 20px;
 }
@@ -132,19 +134,16 @@ th, td {
   padding: 20px;
   text-align: center;
 }
-
 td:first-child {
   border-right: 2px solid white;
 }
 th:first-child {
   border: none;
 }
-
 td img {
   min-height: 25px !important;
   text-align: center;
 }
-
 #legend {
   display: block;
   position: relative;
@@ -154,7 +153,6 @@ td img {
   max-height: 60px;
   opacity: 1;
 }
-
 #audl {
     display: block;
     margin: 0px auto 12px auto;
@@ -173,13 +171,13 @@ td img {
   display: none;
 }
 
+/*Styling for Icons page*/
 #teams-image {
   min-height: 50px !important;
   max-height: 50px;
   text-align: center;
   margin-left: 50px;
 }
-
 .icon {
   min-height: 100px!important;
   max-height: 100px;
@@ -194,22 +192,37 @@ td img {
   display: inline!important;
 }
 
+
+/*Styling for tooltips in Icons page*/
 span>p {
   color: #e17960;
   line-height: 125%;
   padding: 20px;
   font-size: 20px!important;
 }
-
 span>p>a {
   color: black;
 }
-
 span>p>a:hover {
   color: grey;
 }
-
 .tooltipster-base {
   max-width: 300px;
   max-height: 300px;
+}
+
+
+p>a {
+  color: black;
+}
+p>a:hover {
+  color: grey;
+}
+
+#section5 iframe {
+  margin-top: 100px;
+}
+
+#section6 {
+  padding-top: 100px;
 }

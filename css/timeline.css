@@ -50,6 +50,7 @@ Main Components
   height: 100px;
   width: 90%;
   max-width: 800px;
+  min-width: 800px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -69,13 +70,13 @@ Main Components
 }
 .cd-horizontal-timeline .events-wrapper::before {
   left: 0;
-  background-image: -webkit-linear-gradient( left , #f49c61, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to right, #f49c61, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient( left , #ff9966, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to right, #ff9966, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events-wrapper::after {
   right: 0;
-  background-image: -webkit-linear-gradient( right , #f49c61, rgba(248, 248, 248, 0));
-  background-image: linear-gradient(to left, #f49c61, rgba(248, 248, 248, 0));
+  background-image: -webkit-linear-gradient( right , #ff9966, rgba(248, 248, 248, 0));
+  background-image: linear-gradient(to left, #ff9966, rgba(248, 248, 248, 0));
 }
 .cd-horizontal-timeline .events {
   /* this is the grey line/timeline */

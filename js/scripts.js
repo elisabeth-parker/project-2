@@ -5,7 +5,7 @@ $(document).ready(function() {
         direction: 'vertical',
         verticalCentered: true,
         sectionsColor: [],
-        anchors: ['page1', 'page2', 'page3', 'page4'],
+        anchors: ['home', 'basics', 'history', 'divs','icons','hype','quiz'],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
@@ -15,7 +15,7 @@ $(document).ready(function() {
             'textColor': 'white',
             'bulletsColor': 'white',
             'position': 'right',
-            'tooltips': ['Home', 'The Basics', 'The Divisions', 'The Icons']
+            'tooltips': ['Home', 'The Basics', 'The History', 'The Divisions', 'The Icons', 'The Hype', 'The Quiz']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -23,7 +23,7 @@ $(document).ready(function() {
         keyboardScrolling: true,
         sectionSelector: '.section',
         animateAnchor: false,
-        sectionsColor: ['white', '#ffaf62', '#ff9966', '#e17960', '#cd545f', '#ab175e'],
+        sectionsColor: ['white', '#ffaf62', '#ff9966', '#e17960', '#cd545f', '#ab175e','#801147'],
 
 		//events
 		onLeave: function(index, nextIndex, direction){},
