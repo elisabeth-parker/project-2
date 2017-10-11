@@ -19,6 +19,9 @@
 #section5 .section-title {
   background-image: url(../images/bg5.png);
 }
+#section6 .section-title {
+  background-image: url(../images/bg6.png);
+}
 .section-title {
   background-size: cover;
   height: 100vh;
@@ -61,7 +64,7 @@
 
 
 /*styling for each page's paragraphs*/
-p {
+#section1 p, #section2 p, #section3 p, #section4 p, #section5 p {
   padding-left: 20px;
   padding-top: 75px;
   font-family: 'Montserrat', sans-serif;
@@ -220,9 +223,40 @@ p>a:hover {
 }
 
 #section5 iframe {
-  margin-top: 100px;
+  margin-top: 50%;
 }
 
-#section6 {
-  padding-top: 100px;
+
+#section6 h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+p.text {
+  min-height: none;
+  max-height: 50px!important;
+  padding: 0px;
+}
+
+#section6>.row>.quiz {
+  padding-left: 50px;
+}
+
+#section7 {
+  padding: 100px;
+}
+
+#section7 a {
+  color: white;
+  text-decoration: underline;
+}
+
+#section7 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  margin: 50px auto;
 }

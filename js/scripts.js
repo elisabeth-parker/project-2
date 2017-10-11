@@ -5,7 +5,7 @@ $(document).ready(function() {
         direction: 'vertical',
         verticalCentered: true,
         sectionsColor: [],
-        anchors: ['home', 'basics', 'history', 'divs','icons','hype','quiz'],
+        anchors: ['home', 'basics', 'history', 'divs','icons','hype','quiz','sources'],
         scrollingSpeed: 700,
         easing: 'swing',
         loopBottom: false,
@@ -15,7 +15,7 @@ $(document).ready(function() {
             'textColor': 'white',
             'bulletsColor': 'white',
             'position': 'right',
-            'tooltips': ['Home', 'The Basics', 'The History', 'The Divisions', 'The Icons', 'The Hype', 'The Quiz']
+            'tooltips': ['Home', 'The Basics', 'The History', 'The Divisions', 'The Icons', 'The Hype', 'The Quiz','Sources']
         },
        	normalScrollElements: null,
         normalScrollElementTouchThreshold: 5,
@@ -23,7 +23,7 @@ $(document).ready(function() {
         keyboardScrolling: true,
         sectionSelector: '.section',
         animateAnchor: false,
-        sectionsColor: ['white', '#ffaf62', '#ff9966', '#e17960', '#cd545f', '#ab175e','#801147'],
+        sectionsColor: ['white', '#ffaf62', '#ff9966', '#e17960', '#cd545f', '#ab175e','#801147','#600d35'],
 
 		//events
 		onLeave: function(index, nextIndex, direction){},
@@ -51,7 +51,15 @@ $(document).ready(function() {
     side: ['bottom','left'],
     interactive: 'true',
     theme: 'tooltipster-shadow',
-    trigger: 'click',
+    trigger: 'custom',
+    triggerOpen: {
+      click: 'true'
+    },
+    triggerClose: {
+      click: 'true',
+      scroll: 'true',
+      mouseleave: 'true'
+    },
     selfDestruction: 'true'
   });
   $('.your-class').slick({

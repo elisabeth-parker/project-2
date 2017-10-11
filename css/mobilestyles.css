@@ -1,0 +1,36 @@
+/*custom styles for mobile version*/
+/*by Elisabeth Parker*/
+
+@media only screen and (max-width: 500px) {
+
+#section1 h1 {
+  padding-top: 50px!important;
+  font-size: 25px!important;
+}
+
+#section1 h2 {
+  font-size: 20px!important;
+}
+
+.section-title {
+  display: block;
+}
+
+p {
+  font-size: 20px!important;
+  min-height: 100px !important;
+  height: 200px !important;
+  padding: 30px 10px !important;
+}
+.info div {
+  min-height: 20px !important;
+}
+.info div img {
+  max-width: 500px!important;
+  min-width: 200px!important;
+  min-height: 100px!important;
+  max-height: 300px!important;
+  width: 100%;
+  height: auto;
+}
+}
