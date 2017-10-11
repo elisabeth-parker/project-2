@@ -34,7 +34,7 @@ $(document).ready(function() {
   $('.hide').hide();
   $('.vid').tooltipster({
     interactive: 'true',
-    side: 'left',
+    side: ['left','top'],
     theme: 'tooltipster-shadow',
     trigger: 'custom',
     triggerOpen: {

@@ -21,6 +21,8 @@ p {
   min-height: 100px !important;
   height: 200px !important;
   padding: 30px 10px !important;
+  font-weight: 200;
+  max-width: 400px;
 }
 .info div {
   min-height: 20px !important;
@@ -33,4 +35,76 @@ p {
   width: 100%;
   height: auto;
 }
+
+.timeline {
+  min-width: 300px!important;
+}
+
+p#divisions {
+  font-size: 15px!important;
+}
+
+#div-lr {
+  width: 400px;
+}
+
+table {
+  margin-top: 15px;
+}
+
+td, th{
+  padding: 10px!important;
+  font-size: 10px;
+}
+
+#legend {
+  position: unset;
+}
+
+#tooltipster-426526 {
+  display: none;
+}
+
+#audl-active:hover {
+  cursor: default;
+}
+
+#icons {
+  height: 100%;
+}
+#icons-images {
+  text-align: center;
+
+}
+#teams-image {
+  margin-left: 10px!important;
+  margin-bottom: 0px!important;
+  max-width: 350px;
+}
+#teams {
+  padding-top: 0px!important;
+  margin-top: -200px;
+}
+
+.icon {
+  min-height: 50px!important;
+  max-height: 50px;
+  margin: 10px 0px;
+}
+#riot {
+  margin: 10px 80px;
+}
+
+.tooltipster-base p {
+  font-size: 10px;
+}
+#team-lr {
+  margin-bottom: 10px;
+}
+
+iframe {
+  margin-top: 25%!important;
+  width: 100%;
+}
+
 }
